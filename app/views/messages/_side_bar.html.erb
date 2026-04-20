@@ -2,7 +2,7 @@
 <div class="side-bar">
   <div class="side-header">
     <div class="user-name">
-      <%= link_to 'satoshion', root_path %>
+      <%= link_to current_user.name, edit_user_path(current_user) %>
     </div>
     <div class="chat-create-btn">
       <%= link_to 'チャットを作成する', root_path %>
